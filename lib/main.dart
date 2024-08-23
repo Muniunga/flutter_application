@@ -10,24 +10,32 @@ class MeuApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Meu primeiro App'),
           ),
-          body: Column(
-              children: [Row(children: [
-            Expanded(child: Text('Nome'),
-            ),
-            Expanded(child: Text('Sobrenome'),
-            ),
-            Expanded(child: Text('Idade'),
-            ),
-          ]), 
-          Row(children: [
-            Expanded(child: Text('Adérito'),
-            ),
-            Expanded(child: Text('Muniunga'),
-            ),
-            Expanded(child: Text('24'),
-            ),
-          ]),]
-          )),
+          body: Center(
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.star,
+                color: Colors.green,
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.green,
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.green,
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.black,
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.black,
+              )
+            ],
+          ))),
     );
   }
 }
