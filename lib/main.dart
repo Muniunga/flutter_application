@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'exemplo.dart';
 
 void main() => runApp(MeuApp());
 
@@ -8,26 +7,18 @@ class MeuApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Meu primeiro App'),
-        ),
-        body: Column(
-          children: [
-            Exemplo(
-              
-              onPress: () {
-                print('Clicou no item 1');
-              },
-            ),
-            Exemplo(
-              title: 'Texto 2',
-              onPress: () {
-                print('Clicou no item 2');
-              },
-            ),
-          ],
-        ),
-      ),
+          appBar: AppBar(
+            title: Text('Meu primeiro App'),
+          ),
+          body: Center(
+              child: Column(
+            children: [
+              Image(
+                  width: 100,
+                  image: AssetImage('assets/logowhanad30397e3.png')),
+              Image.network('https://www.google.com.br/google.jpg')
+            ],
+          ))),
     );
   }
 }
