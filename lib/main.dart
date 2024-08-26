@@ -10,32 +10,63 @@ class MeuApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Meu primeiro App'),
           ),
-          body: Center(
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
+          body: Column(
             children: [
-              Icon(
-                Icons.star,
-                color: Colors.green,
+              Container(
+                height: 100,
+                color: Colors.red,
               ),
-              Icon(
-                Icons.star,
-                color: Colors.green,
+              Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.blue,
+                  )),
+                  Expanded(
+                      child: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.green,
+                  ))
+                ],
               ),
-              Icon(
-                Icons.star,
-                color: Colors.green,
+              Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                  )),
+                  Expanded(
+                      child: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.black,
+                  )),
+                  Expanded(
+                      child: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.orange,
+                  ))
+                ],
               ),
-              Icon(
-                Icons.star,
-                color: Colors.black,
-              ),
-              Icon(
-                Icons.star,
-                color: Colors.black,
+              Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.blueAccent,
+                  )),
+                 
+                ],
               )
             ],
-          ))),
+          )),
     );
   }
 }
