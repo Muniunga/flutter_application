@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(MeuApp());
 
 class MeuApp extends StatelessWidget {
-  var textStyle= TextStyle(fontSize: 30,color: Colors.red);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -11,25 +11,19 @@ class MeuApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Meu primeiro App'),
           ),
-          body: Center(
-            child: Column(
+          body:  Column(
               children: [
-                Text('Titulo legal', style: textStyle),
-                Container(
-                  child: Icon(
-                    Icons.star,
-                    size: 40,
-                    color: Colors.blue,
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: null, // Passa a função sem executar diretamente
-                  child: Text('Clique aqui'),
-                ),
-              ],
+                Row(
+                  children: [
+                    Image.asset('assets/logowhanad30397e3.png')
+                  ],
+                )
+
+                
+               ],
             ),
-          )),
-    );
+          ));
+   
   }
 }
 
